@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Document</title>
+    <title>Java script</title>
 </head>
 
 <body>
     <script>
         function pardeep(para1, para2) {
-            var a = para1 + "love" + para2
+            var a = para1 + "friends" + para2
             return a;
         }
-        console.log(pardeep("any", "you"));
+        console.log(pardeep("pardeep", "delip"));
 
         var a;
         a = 12;
@@ -72,9 +72,46 @@
         } else {
             console.log("odd")
         }
+        var a = 20;
+        var b = 30;
+        if (a < b) {
+            console.log("this is true");
+        }
+        var a = 20;
+        var b = 20;
+        if (a == b) {
+            console.log("this is true");
+        }
 
+// =============  if else if Operator
+        var time = 17;
+        if (time > 1 && time < 11) {
+            console.log("Good Morning")
+        } else if (time > 11 && time < 15) {
+            console.log("Good Afternone")
+        } else if (time > 15 && time < 18) {
+            console.log("Good Evening")
+        } else {
+            console.log("Good Night")
+        };
+
+// =============  if else  Operator
+        var age = 18;
+        var drive = 0;
+        if (age >= 18) {
+            drive = 'yes drive';
+        } else {
+            drive = 'no drive';
+        }
+        console.log(drive)
+
+// =============  Ternary Operator
+        var age = 17;
+        var drivetwo = age >= 18 ? 'yes drive' : 'no drive';
+        console.log(drivetwo)
+
+// ================== Switch
         var month = 12;
-
         switch (month) {
             case (1): console.log("January");
                 break;
@@ -100,8 +137,18 @@
                 break;
             case (12): console.log("December");
                 break;
-                default:console.log("Please Enter Valid Month Number")
+            default: console.log("Please Enter Valid Month Number")
         }
+
+        var age = 18;
+        switch (true) {
+            case (age >= 18 && age <= 40): console.log("You are eligilble");
+                break;
+            default: console.log("You are not eligilble")
+        }
+
+
+
     </script>
 </body>
 
