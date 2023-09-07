@@ -110,32 +110,31 @@
         var drivetwo = age >= 18 ? 'yes drive' : 'no drive';
         console.log(drivetwo)
 
-        // ================== Switch
-        var month = 12;
-        switch (month) {
-            case (1): console.log("January");
+        // ================== Switch get month
+        switch (new Date().getMonth()) {
+            case (0): console.log("January");
                 break;
-            case (2): console.log("February");
+            case (1): console.log("February");
                 break;
-            case (3): console.log("March");
+            case (2): console.log("March");
                 break;
-            case (4): console.log("April");
+            case (3): console.log("April");
                 break;
-            case (5): console.log("May");
+            case (4): console.log("May");
                 break;
-            case (6): console.log("June");
+            case (5): console.log("June");
                 break;
-            case (7): console.log("July");
+            case (6): console.log("July");
                 break;
-            case (8): console.log("August");
+            case (7): console.log("August");
                 break;
-            case (9): console.log("September");
+            case (8): console.log("September");
                 break;
-            case (10): console.log("October");
+            case (9): console.log("October");
                 break;
-            case (11): console.log("November");
+            case (10): console.log("November");
                 break;
-            case (12): console.log("December");
+            case (11): console.log("December");
                 break;
             default: console.log("Please Enter Valid Month Number")
         }
@@ -149,21 +148,53 @@
 
     </script>
     <script>
+        //for loop
         for (let i = 19; i <= 190; i = i + 19) {
             console.log(i)
         }
+
+        //while loop
         let key = 0;
         while (key <= 200) {
             console.log(key)
             key = key + 20
         }
 
-
+        //do while loop
         let j = 10;
         do {
             console.log(j)
             j = j + 10
         } while (j <= 100)
+
+
+        // for  in loop
+        let student = {
+            Name: "Pardep",
+            Age: 27,
+            DOB: 1997
+        };
+
+        for (let key in student) {
+            console.log(key, student[key]);
+        }
+
+
+        //Arrays for in loop 
+
+        let name = ["pardeep", "dalip", "robin", "aashi"]
+
+        for (let index in name) {
+            console.log(index, name[index]);
+        }
+
+
+             //Arrays for of loop 
+             let names = ["pardeep", "dalip", "robin", "aashi"]
+
+        for (let indextwo of names) {
+            console.log( indextwo  );
+        }
     </script>
 </body>
 
