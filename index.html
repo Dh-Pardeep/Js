@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <script>
+    <!-- <script>
         function pardeep(para1, para2) {
             var a = para1 + "friends" + para2
             return a;
@@ -194,6 +194,194 @@
 
         for (let indextwo of names) {
             console.log(indextwo);
+        }
+    </script> -->
+    <script>
+        //  Operators
+
+        //Add Operators
+        {
+            let x = 5;
+            let y = 2;
+            let z = x + y;
+            console.log(z);
+        }
+
+        //Subtract Operators
+        {
+            let x = 5;
+            let y = 2;
+            let z = x - y;
+            console.log(z);
+        }
+
+        //Multiply Operators
+        {
+            let x = 5;
+            let y = 2;
+            let z = x * y;
+            console.log(z);
+        }
+
+        //Divide Operators
+        {
+            let x = 6;
+            let y = 2;
+            let z = x / y;
+            console.log(z);
+        }
+
+        //Remainder Operators
+        {
+            let x = 6;
+            let y = 2;
+            let z = x % y;
+            console.log(z);
+        }
+
+        //Exponential Operators
+        {
+            let x = 6;
+            let y = 3;
+            let z = x ** y;
+            console.log(z);
+        }
+
+        //Assign value Operators
+        {
+            let x = 7;
+            let y = 6;
+            let z = x = y;
+            console.log(z);
+        }
+
+        //Add then assign Operators
+        {
+            let x = 6;
+            let y = 3;
+            let z = x += y;
+            console.log(z);
+        }
+
+        //filter
+        {
+            const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+            const result = words.filter((word) => word.length > 6);
+            console.log(result);
+        }
+
+        //map
+        {
+            const array1 = [1, 4, 9, 16];
+            const map1 = array1.map((x) => x / 2);
+            console.log(map1);
+        }
+
+        //find
+        {
+            const array1 = [5, 12, 8, 130, 44];
+            const found = array1.find((element) => element > 10);
+            console.log(found);
+        }
+
+        //every
+        {
+            const array1 = [1, 30, 39, 29, 10, 13];
+            const arr2 = array1.every((x) => x < 40)
+            console.log(arr2);
+        }
+
+        // //some
+        // {
+        //     const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        //     const arr2 = array.some((x) => x=10)
+        //     console.log(arr2);
+        // }
+
+        //short
+        {
+            const months = ['pardeep', 'dalip', 'joginder', 'aashi'];
+            months.sort();
+            console.log(months);
+        }
+
+        //splice
+        {
+            const months = ['mukesh', 'dalip', 'joginder', 'aashi'];
+            months.splice(1, 0, 'pardeep');
+            console.log(months);
+            months.splice(4, 1, 'May');
+            console.log(months);
+            months.splice(5, 2, 'june');
+            console.log(months);
+        }
+
+        //slice
+        {
+            const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+            console.log(animals.slice(2));
+            console.log(animals.slice(2, 4));
+            console.log(animals.slice(1, 5));
+            console.log(animals.slice(-2));
+            console.log(animals.slice(2, -1));
+            console.log(animals.slice());
+        }
+
+        //reduce
+        {
+            const array1 = [1, 2, 3, 4];
+            const a = 0;
+            const b = array1.reduce((x, y) => x + y, a);
+            console.log(b);
+        }
+
+        //foreach
+        {
+            const array1 = ['a', 'b', 'c'];
+            array1.forEach((element) => console.log(element));
+        }
+
+        //concat
+        {
+            const array1 = ['a', 'b', 'c'];
+            const array2 = ['d', 'e', 'f'];
+            const array3 = array1.concat(array2);
+            console.log(array3);
+        }
+
+        //charat
+        {
+            let text = "HELLO WORLD";
+            let letter = text.charAt(6);
+            console.log(letter)
+        }
+
+        //indexof
+        {
+            let text = "Hello world welcome to the universe.";
+            let result = text.indexOf("to");
+            console.log(result);
+        }
+
+        //startwith
+        {
+            let text = "Hello world, welcome to the universe.";
+            let result = text.startsWith("Hello");
+            console.log(result);
+        }
+
+        //endwith
+        {
+            let text = "Hello world, welcome to the universe.";
+            let result = text.endsWith(".");
+            console.log(result);
+        }
+
+        //split
+        {
+            let text = "How are you doing today?";
+            const myArray = text.split(" ");
+            console.log(myArray);
         }
     </script>
 </body>
