@@ -6,9 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Java script</title>
+    <style>
+        .classToBeAdded {
+            background-color: black !important;
+        }
+    </style>
 </head>
 
-<body>
+<body id="div1">
+
+    <button onclick="bgclick()">button</button>
+    <button onclick="bgremove()">button</button>
+
+
+    <script>
+
+        function bgclick() {
+            document.getElementById("div1").classList.add("classToBeAdded");
+        }
+        function bgremove() {
+            document.getElementById("div1").classList.remove("classToBeAdded");
+        }
+
+    </script>
+
+
+
+
+
     <!-- <script>
         function pardeep(para1, para2) {
             var a = para1 + "friends" + para2
@@ -266,7 +291,7 @@
         //filter
         {
             const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
-            const result = words.filter((word) => word.length > 6);
+            const result = words.filter((x) => x.length > 6);
             console.log(result);
         }
 
@@ -383,6 +408,39 @@
             const myArray = text.split(" ");
             console.log(myArray);
         }
+    </script>
+
+    <script>
+
+        const p = new Promise((resolve, reject) => {
+            let user = true
+            setTimeout(() => {
+                if (user) {
+                    resolve('Successful login');
+                } else {
+                    reject('Login failed');
+                }
+            }, 2000)
+        })
+        // (B) Using a promise
+        p.then((res) => {
+            console.log(res)
+        })
+            .catch((err) => {
+                console.log(err)
+            })
+    </script>
+
+    <script>
+        function Car(make, model, year) {
+            this.make = make;
+            this.model = model;
+            this.year = year;
+        }
+        const car1 = new Car("honda", "city", 2013)
+        console.log(car1);
+
+
     </script>
 </body>
 
