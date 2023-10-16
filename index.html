@@ -14,25 +14,16 @@
 </head>
 
 <body id="div1">
-
-    <button onclick="bgclick()">button</button>
+    <!-- <button onclick="bgclick()">button</button>
     <button onclick="bgremove()">button</button>
-
-
     <script>
-
         function bgclick() {
             document.getElementById("div1").classList.add("classToBeAdded");
         }
         function bgremove() {
             document.getElementById("div1").classList.remove("classToBeAdded");
-        }
-
-    </script>
-
-
-
-
+        } -->
+    <!-- </script> -->
 
     <!-- <script>
         function pardeep(para1, para2) {
@@ -221,7 +212,7 @@
             console.log(indextwo);
         }
     </script> -->
-    <script>
+    <!-- <script>
         //  Operators
 
         //Add Operators
@@ -408,9 +399,9 @@
             const myArray = text.split(" ");
             console.log(myArray);
         }
-    </script>
+    </script> -->
 
-    <script>
+    <!-- <script>
 
         const p = new Promise((resolve, reject) => {
             let user = true
@@ -429,9 +420,9 @@
             .catch((err) => {
                 console.log(err)
             })
-    </script>
+    </script> -->
 
-    <script>
+    <!-- <script>
         function Car(make, model, year) {
             this.make = make;
             this.model = model;
@@ -440,6 +431,109 @@
         const car1 = new Car("honda", "city", 2013)
         console.log(car1);
 
+
+    </script> -->
+    <!-- <script>
+        //Q-1 checkif a number is even ad odd
+        {
+            function CheckNumber(Number) {
+                if (Number % 2 === 0) {
+                    return "Even";
+                } else {
+                    return "odd";
+                }
+            }
+            console.log(CheckNumber(2));
+        }
+        //Q -2 Determine whether a person is eligible to vote based on their age.
+        {
+            function CheckVoter(Voter) {
+                if (Voter >= 18) {
+                    return "You Are Eligible";
+                } else {
+                    return "You Are Not Eligible";
+                }
+            }
+            console.log(CheckVoter(20));
+        }
+        //Q -3 calculate the grade of a student based on their score.
+        {
+            function CalculateGrade(Grade) {
+                if (Grade >= 90 && Grade <= 100) {
+                    return "A";
+                } else if (Grade >= 80 && Grade <= 90) {
+                    return "B";
+                } else if (Grade >= 70 && Grade <= 80) {
+                    return "C";
+                } else if (Grade >= 60 && Grade <= 70) {
+                    return "D";
+                } else {
+                    return "E"
+                }
+            }
+            console.log(CalculateGrade(70))
+        }
+        //Q-4  determine the largest of three numbers
+        {
+            function largestThree(ThreeNumber) {
+                if (ThreeNumber >= 100 && ThreeNumber <= 999) {
+                    return "true";
+                } else {
+                    return "false";
+                }
+            }
+            console.log(largestThree(100))
+        }
+        //Q-5 check if a string is empty or contains some text.
+        {
+            var StringEmpty = "fff";
+            if (StringEmpty) {
+                console.log("The string not empty");
+            } else {
+                console.log("The string is empty.");
+            }
+        }
+        //Q-6 determine if a number positive negative zero
+        {
+            function NumberCheckPNZ(PNZcheck) {
+                if (PNZcheck >= 1) {
+                    return "Positive";
+                } else if (PNZcheck <= -1) {
+                    return "Negative";
+                } else {
+                    return "Zero"
+                }
+            }
+            console.log(NumberCheckPNZ(0))
+        }
+    </script> -->
+    <!-- <script>
+        function helloworldId(name) {
+            console.log("this prints to the console when you run tests");
+            return "Hello" + name;
+        }
+        helloworldId()
+    </script> -->
+
+    <script>
+        {
+            function cube(number) {
+                const a = number.map((element) => Math.pow(element, 3));
+                return a;
+            }
+            const number = [3, 4, 5];
+
+            const resultcube = cube(number);
+            console.log(resultcube);
+
+
+        }
+        {
+            let a = Math.pow(3, 3);
+            console.log(a);
+        }
+
+        
 
     </script>
 </body>
